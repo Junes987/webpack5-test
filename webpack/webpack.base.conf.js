@@ -7,10 +7,6 @@ const resolvePath = (relativePath) => path.resolve(__dirname, relativePath); // 
 
 const baseConfig = {
   entry: resolvePath('../src/index.jsx'),
-  output: {
-    path: resolvePath('../dist'),
-    filename: '[name].bundle.js',
-  },
   module: {
     rules: [
       {
