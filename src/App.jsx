@@ -1,6 +1,7 @@
 import logo from "./logo.svg";
 import "./App.less";
 import React from "react";
+import Test from './views/Test/index.jsx'
 
 const  App = () => {
   return (
@@ -18,6 +19,7 @@ const  App = () => {
         >
           Hello Webpack
         </a>
+        <Test />
       </header>
     </div>
   );

@@ -5,17 +5,30 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 const resolvePath = (relativePath) => path.resolve(__dirname, relativePath); // 根据相对路径获取绝对路径
 
+const getCssLoaders = () => [
+  MiniCssExtractPlugin.loader,
+  {
+    loader: 'css-loader',
+    options: {
+      modules: {
+        localIdentName: "[name]--[hash:base64:5]"
+      },
+    }
+  }
+]
+
+
 const baseConfig = {
   entry: resolvePath('../src/index.jsx'),
   module: {
     rules: [
       {
         test: /\.css$/i,
-        use: [MiniCssExtractPlugin.loader, "css-loader", "postcss-loader"],
+        use: [...getCssLoaders(), "postcss-loader"],
       },
       {
         test: /\.less$/i,
-        use: [MiniCssExtractPlugin.loader, "css-loader", "postcss-loader", "less-loader"],
+        use: [...getCssLoaders(), "postcss-loader", "less-loader"],
       },
       {
         test: /\.(js|jsx)$/,
