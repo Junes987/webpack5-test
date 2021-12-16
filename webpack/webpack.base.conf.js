@@ -33,6 +33,7 @@ const baseConfig = {
       {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
+        options: { cacheDirectory: true },
         use: 'babel-loader'
       },
       {
