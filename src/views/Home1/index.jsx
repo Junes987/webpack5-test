@@ -2,12 +2,12 @@ import React from "react";
 import styles from './index.less'
 
 
-const  Test = () => {
+const  Home1 = () => {
   return (
     <div className={styles.container}>
-        测试CSS Moudle
+        JSX
     </div>
   );
 }
 
-export default Test;
+export default Home1;

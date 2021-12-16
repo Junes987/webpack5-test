@@ -20,6 +20,13 @@ const getCssLoaders = () => [
 
 const baseConfig = {
   entry: resolvePath('../src/index.jsx'),
+  resolve: {
+    alias: {
+      'src': resolvePath('../src'),
+      'components': resolvePath('../src/components'),
+      'utils': resolvePath('../src/utils'),
+    },
+  },
   module: {
     rules: [
       {
@@ -31,15 +38,23 @@ const baseConfig = {
         use: [...getCssLoaders(), "postcss-loader", "less-loader"],
       },
       {
-        test: /\.(js|jsx)$/,
+        test: /\.[jt]sx?$/,
         exclude: /node_modules/,
-        options: { cacheDirectory: true },
         use: 'babel-loader'
       },
       {
-        test: /\.svg$/,
-        type: 'asset/resource'
-      }
+        test: [/\.bmp$/, /\.gif$/, /\.jpe?g$/, /\.png$/],
+        type: 'asset',
+        parser: {
+          dataUrlCondition: {
+            maxSize: 4 * 1024,
+          },
+        },
+      },
+      {
+        test: /\.(eot|svg|ttf|woff|woff2?)$/,
+        type: 'asset/resource',
+      },
     ]
   },
   plugins: [

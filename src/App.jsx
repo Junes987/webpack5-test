@@ -1,7 +1,8 @@
 import logo from "./logo.svg";
 import "./App.less";
 import React from "react";
-import Test from './views/Test/index.jsx'
+import Home1 from './views/Home1/index.jsx'
+import Home2 from './views/Home2/index.tsx'
 
 const  App = () => {
   return (
@@ -19,7 +20,8 @@ const  App = () => {
         >
           Hello Webpack
         </a>
-        <Test />
+        <Home1 />
+        <Home2 username="Junes"/>
       </header>
     </div>
   );
