@@ -1,4 +1,5 @@
 const path = require('path')
+const WebpackBar = require('webpackbar')
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
@@ -22,6 +23,7 @@ const baseConfig = {
       },
       {
         test: /\.(js|jsx)$/,
+        exclude: /node_modules/,
         use: 'babel-loader'
       },
       {
@@ -31,6 +33,7 @@ const baseConfig = {
     ]
   },
   plugins: [
+    new WebpackBar(),
     new HtmlWebpackPlugin({
       title: 'react app',
       template: resolvePath('../public/index.html'),
