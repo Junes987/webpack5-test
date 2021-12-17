@@ -19,13 +19,14 @@ const getCssLoaders = () => [
 
 
 const baseConfig = {
-  entry: resolvePath('../src/index.jsx'),
+  entry: resolvePath('../src/index'),
   resolve: {
     alias: {
       'src': resolvePath('../src'),
       'components': resolvePath('../src/components'),
       'utils': resolvePath('../src/utils'),
     },
+    extensions: ['.tsx', '.ts', '.jsx', '.js', '.json'],
   },
   module: {
     rules: [

@@ -1,10 +1,10 @@
-import logo from "./logo.svg";
-import "./App.less";
 import React from "react";
-import Home1 from './views/Home1/index.jsx'
-import Home2 from './views/Home2/index.tsx'
+import logo from "./logo.svg";
+import Home1 from './views/Home1'
+import Home2 from './views/Home2'
+import "./App.less";
 
-const  App = () => {
+const App = () => {
   return (
     <div className="App">
       <header className="App-header">
@@ -18,10 +18,10 @@ const  App = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Hello Webpack
+          Hello Webpack 1
         </a>
         <Home1 />
-        <Home2 username="Junes"/>
+        <Home2 username="Junes" />
       </header>
     </div>
   );
