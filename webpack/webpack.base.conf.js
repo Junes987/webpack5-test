@@ -1,9 +1,9 @@
 const path = require('path')
 const WebpackBar = require('webpackbar')
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
-const resolvePath = (relativePath) => path.resolve(__dirname, relativePath); // 根据相对路径获取绝对路径
+const resolvePath = (relativePath) => path.resolve(__dirname, relativePath) // 根据相对路径获取绝对路径
 
 const getCssLoaders = () => [
   MiniCssExtractPlugin.loader,
@@ -11,20 +11,19 @@ const getCssLoaders = () => [
     loader: 'css-loader',
     options: {
       modules: {
-        localIdentName: "[name]--[hash:base64:5]"
+        localIdentName: '[name]--[hash:base64:5]',
       },
-    }
-  }
+    },
+  },
 ]
-
 
 const baseConfig = {
   entry: resolvePath('../src/index'),
   resolve: {
     alias: {
-      'src': resolvePath('../src'),
-      'components': resolvePath('../src/components'),
-      'utils': resolvePath('../src/utils'),
+      src: resolvePath('../src'),
+      components: resolvePath('../src/components'),
+      utils: resolvePath('../src/utils'),
     },
     extensions: ['.tsx', '.ts', '.jsx', '.js', '.json'],
   },
@@ -32,16 +31,16 @@ const baseConfig = {
     rules: [
       {
         test: /\.css$/i,
-        use: [...getCssLoaders(), "postcss-loader"],
+        use: [...getCssLoaders(), 'postcss-loader'],
       },
       {
         test: /\.less$/i,
-        use: [...getCssLoaders(), "postcss-loader", "less-loader"],
+        use: [...getCssLoaders(), 'postcss-loader', 'less-loader'],
       },
       {
         test: /\.[jt]sx?$/,
         exclude: /node_modules/,
-        use: 'babel-loader'
+        use: 'babel-loader',
       },
       {
         test: [/\.bmp$/, /\.gif$/, /\.jpe?g$/, /\.png$/],
@@ -56,20 +55,20 @@ const baseConfig = {
         test: /\.(eot|svg|ttf|woff|woff2?)$/,
         type: 'asset/resource',
       },
-    ]
+    ],
   },
   plugins: [
     new WebpackBar(),
     new HtmlWebpackPlugin({
       title: 'react app',
       template: resolvePath('../public/index.html'),
-      filename: 'index.html'
+      filename: 'index.html',
     }),
     new MiniCssExtractPlugin({
       filename: 'css/[name].[contenthash:8].css',
       chunkFilename: 'css/[name].[contenthash:8].chunk.css',
-    })
-  ]
+    }),
+  ],
 }
 
 module.exports = {
