@@ -1,5 +1,6 @@
-const { baseConfig, resolvePath } = require('./webpack.base.conf');
-const { merge } = require('webpack-merge');
+const { merge } = require('webpack-merge')
+const { SERVER_HOST, SERVER_PORT } = require('./constant')
+const { baseConfig, resolvePath } = require('./webpack.base.conf')
 
 module.exports = merge(baseConfig, {
   mode: 'development',
@@ -7,10 +8,10 @@ module.exports = merge(baseConfig, {
     path: resolvePath('../dist'),
     filename: '[name].bundle.js',
   },
-  devtool: 'cheap-module-source-map',
+  devtool: 'eval-source-map',
   devServer: {
-    host: '127.0.0.1',
-    port: 9000,
+    host: SERVER_HOST,
+    port: SERVER_PORT,
     hot: true,
     open: true,
   },
