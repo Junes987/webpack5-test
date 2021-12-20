@@ -1,10 +1,14 @@
+const { isProd } = require('./webpack/constant')
+
 module.exports = {
   plugins: [
-    [
-      'autoprefixer',
+    isProd && [
+      'postcss-preset-env',
       {
-        // 选项
+        autoprefixer: {
+          grid: true,
+        },
       },
     ],
   ],
-};
+}

@@ -1982,12 +1982,12 @@ caniuse-api@^3.0.0:
     lodash.memoize "^4.1.2"
     lodash.uniq "^4.5.0"
 
-caniuse-lite@^1.0.0, caniuse-lite@^1.0.30001272, caniuse-lite@^1.0.30001286:
+caniuse-lite@^1.0.0, caniuse-lite@^1.0.30001286:
   version "1.0.30001289"
   resolved "https://registry.npmmirror.com/caniuse-lite/download/caniuse-lite-1.0.30001289.tgz#d62a20175c4d9e740feda12a78b7c8df7866329e"
   integrity sha512-hV6x4IfrYViN8cJbGFVbjD7KCrhS/O7wfDgvevYRanJ/IN+hhxpTcXXqaxy3CzPNFe5rlqdimdEB/k7H0YzxHg==
 
-caniuse-lite@^1.0.30001109:
+caniuse-lite@^1.0.30001109, caniuse-lite@^1.0.30001272, caniuse-lite@^1.0.30001287:
   version "1.0.30001291"
   resolved "https://registry.npmmirror.com/caniuse-lite/download/caniuse-lite-1.0.30001291.tgz#08a8d2cfea0b2cf2e1d94dd795942d0daef6108c"
   integrity sha512-roMV5V0HNGgJ88s42eE70sstqGW/gwFndosYrikHthw98N5tLnOTxFqMLQjZVRxTWFlJ4rn+MsgXrR7MDPY4jA==
@@ -2315,12 +2315,26 @@ cross-spawn@^7.0.1, cross-spawn@^7.0.2, cross-spawn@^7.0.3:
     shebang-command "^2.0.0"
     which "^2.0.1"
 
+css-blank-pseudo@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.npmmirror.com/css-blank-pseudo/download/css-blank-pseudo-3.0.0.tgz#c40a428886b600ee8a1622231f6cb22c13518d9e"
+  integrity sha512-lBG90FEc4A2lZeRoFkJHYnJlQFgR49hTo3E8HA6oGN+mN66EIslimxtcAYx4xlkBR0c3eNCOjqQ2ACHaav+7Qw==
+  dependencies:
+    postcss-selector-parser "^6.0.7"
+
 css-declaration-sorter@^6.0.3:
   version "6.1.3"
   resolved "https://registry.nlark.com/css-declaration-sorter/download/css-declaration-sorter-6.1.3.tgz?cache=0&sync_timestamp=1630965563343&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fcss-declaration-sorter%2Fdownload%2Fcss-declaration-sorter-6.1.3.tgz#e9852e4cf940ba79f509d9425b137d1f94438dc2"
   integrity sha1-6YUuTPlAunn1CdlCWxN9H5RDjcI=
   dependencies:
     timsort "^0.3.0"
+
+css-has-pseudo@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.npmmirror.com/css-has-pseudo/download/css-has-pseudo-3.0.0.tgz#f791f2d578557b22e60842e06d630bd8b8b1a9d3"
+  integrity sha512-1LlqZebDVJXvLPP0RZ8U1jrpFEHWqttBlWz46PVNN6tD65O3IgooDkGEAhfhHTJUGHJHrXzH+ANIC0/1bD9l+A==
+  dependencies:
+    postcss-selector-parser "^6.0.7"
 
 css-loader@^6.5.1:
   version "6.5.1"
@@ -2349,6 +2363,11 @@ css-minimizer-webpack-plugin@^3.2.0:
     serialize-javascript "^6.0.0"
     source-map "^0.6.1"
 
+css-prefers-color-scheme@^6.0.0:
+  version "6.0.0"
+  resolved "https://registry.npmmirror.com/css-prefers-color-scheme/download/css-prefers-color-scheme-6.0.0.tgz#f4742655bacfcb79503ee797b32a088e1bcaf4e9"
+  integrity sha512-Ko2uKO81GbDgV1DG0OywofFy8Oz3/beGryi3ohmXAGo3duZI2HCz6MCQq85WdiKhWE7N3pMjUByIh137Xp5v6g==
+
 css-select@^4.1.3:
   version "4.2.0"
   resolved "https://registry.npmmirror.com/css-select/download/css-select-4.2.0.tgz#ab28276d3afb00cc05e818bd33eb030f14f57895"
@@ -2372,6 +2391,11 @@ css-what@^5.1.0:
   version "5.1.0"
   resolved "https://registry.npmmirror.com/css-what/download/css-what-5.1.0.tgz#3f7b707aadf633baf62c2ceb8579b545bb40f7fe"
   integrity sha1-P3tweq32M7r2LCzrhXm1RbtA9/4=
+
+cssdb@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.npm.taobao.org/cssdb/download/cssdb-5.0.0.tgz#96db23e70dda3d03a32346de611f0e79fee68b7f"
+  integrity sha1-ltsj5w3aPQOjI0beYR8Oef7mi38=
 
 cssesc@^3.0.0:
   version "3.0.0"
@@ -5411,6 +5435,13 @@ posix-character-classes@^0.1.0:
   resolved "https://registry.nlark.com/posix-character-classes/download/posix-character-classes-0.1.1.tgz#01eac0fe3b5af71a2a6c02feabb8c1fef7e00eab"
   integrity sha1-AerA/jta9xoqbAL+q7jB/vfgDqs=
 
+postcss-attribute-case-insensitive@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.nlark.com/postcss-attribute-case-insensitive/download/postcss-attribute-case-insensitive-5.0.0.tgz#39cbf6babf3ded1e4abf37d09d6eda21c644105c"
+  integrity sha1-Ocv2ur897R5KvzfQnW7aIcZEEFw=
+  dependencies:
+    postcss-selector-parser "^6.0.2"
+
 postcss-calc@^8.0.0:
   version "8.0.0"
   resolved "https://registry.npm.taobao.org/postcss-calc/download/postcss-calc-8.0.0.tgz#a05b87aacd132740a5db09462a3612453e5df90a"
@@ -5418,6 +5449,27 @@ postcss-calc@^8.0.0:
   dependencies:
     postcss-selector-parser "^6.0.2"
     postcss-value-parser "^4.0.2"
+
+postcss-color-functional-notation@^4.1.0:
+  version "4.1.0"
+  resolved "https://registry.npmmirror.com/postcss-color-functional-notation/download/postcss-color-functional-notation-4.1.0.tgz#4593ea50d61f1a8bd55fa8c165304badd6383433"
+  integrity sha512-bBB64p3Fzo0DaxGfVp6ELRjOx+MysN1DlvkWtXwZr25i8SZLAEL+QAV6ttX5iraN+e3fdCxaVm7sHobNyy6qug==
+  dependencies:
+    postcss-value-parser "^4.2.0"
+
+postcss-color-hex-alpha@^8.0.1:
+  version "8.0.1"
+  resolved "https://registry.npmmirror.com/postcss-color-hex-alpha/download/postcss-color-hex-alpha-8.0.1.tgz#ba0fbc4246a92c51a23b7ecbf66f7d9a956d246c"
+  integrity sha512-kzp95xRLSFnFdmVIWwbWa3QohE3v/G/wNBvW4U66Lt4wq119I6Bz1EVErrARWZ5+7HskgQ6M4mpiwjo+jOdApA==
+  dependencies:
+    postcss-value-parser "^4.2.0"
+
+postcss-color-rebeccapurple@^7.0.1:
+  version "7.0.1"
+  resolved "https://registry.npmmirror.com/postcss-color-rebeccapurple/download/postcss-color-rebeccapurple-7.0.1.tgz#59a9f5493dd7912079eac2aaeebccb076a6abdf8"
+  integrity sha512-uA5MAOoCwCK32VgYXWwPD3vBDDOi1oMOkLnO+U1Af6ex7JOE0xHVJqnc9w5QS+fPJ9yveXeHKVtdVqzP2WiCsQ==
+  dependencies:
+    postcss-value-parser "^4.2.0"
 
 postcss-colormin@^5.2.2:
   version "5.2.2"
@@ -5435,6 +5487,32 @@ postcss-convert-values@^5.0.2:
   integrity sha1-h5uEncNnfH1ryUtqLBo/CAh5gFk=
   dependencies:
     postcss-value-parser "^4.1.0"
+
+postcss-custom-media@^8.0.0:
+  version "8.0.0"
+  resolved "https://registry.nlark.com/postcss-custom-media/download/postcss-custom-media-8.0.0.tgz#1be6aff8be7dc9bf1fe014bde3b71b92bb4552f1"
+  integrity sha1-G+av+L59yb8f4BS947cbkrtFUvE=
+
+postcss-custom-properties@^12.0.1:
+  version "12.0.1"
+  resolved "https://registry.npmmirror.com/postcss-custom-properties/download/postcss-custom-properties-12.0.1.tgz#9aab8686e73a899de9440ce27cc10595ad3b0e22"
+  integrity sha512-Z3WjuML7qn6ehesWD4vDqOmM5CZO/qfVknpI9/gDOwMNhcLg3OSgT5wENR4kFDZtCricAE7cxL97bsj5lFnuZQ==
+  dependencies:
+    postcss-value-parser "^4.2.0"
+
+postcss-custom-selectors@^6.0.0:
+  version "6.0.0"
+  resolved "https://registry.nlark.com/postcss-custom-selectors/download/postcss-custom-selectors-6.0.0.tgz#022839e41fbf71c47ae6e316cb0e6213012df5ef"
+  integrity sha1-Aig55B+/ccR65uMWyw5iEwEt9e8=
+  dependencies:
+    postcss-selector-parser "^6.0.4"
+
+postcss-dir-pseudo-class@^6.0.1:
+  version "6.0.1"
+  resolved "https://registry.npmmirror.com/postcss-dir-pseudo-class/download/postcss-dir-pseudo-class-6.0.1.tgz#90958de910870b9c20bff4279a0b74d54c880224"
+  integrity sha512-nA6+XVUc5VDe6LrJ5KWFqJ05dxZXzoYiUQJFZSuwLW/8aI462w7gCEhB+RnOA+N3dtrj8B2WTSfcjCac6RJW0A==
+  dependencies:
+    postcss-selector-parser "^6.0.7"
 
 postcss-discard-comments@^5.0.1:
   version "5.0.1"
@@ -5456,6 +5534,44 @@ postcss-discard-overridden@^5.0.1:
   resolved "https://registry.nlark.com/postcss-discard-overridden/download/postcss-discard-overridden-5.0.1.tgz?cache=0&sync_timestamp=1621449732464&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fpostcss-discard-overridden%2Fdownload%2Fpostcss-discard-overridden-5.0.1.tgz#454b41f707300b98109a75005ca4ab0ff2743ac6"
   integrity sha1-RUtB9wcwC5gQmnUAXKSrD/J0OsY=
 
+postcss-double-position-gradients@^3.0.3:
+  version "3.0.3"
+  resolved "https://registry.npmmirror.com/postcss-double-position-gradients/download/postcss-double-position-gradients-3.0.3.tgz#4c528dacfe3b7a52ea99665866912072184322b0"
+  integrity sha512-x3DYDhCsKS/sjH6t+sM9R+pq4lCwdHGVeUOpE/gDybfY33acJJie+NzRigKJVze7E/jH/1WGl/qPRV90Lso7Mg==
+  dependencies:
+    postcss-value-parser "^4.2.0"
+
+postcss-env-function@^4.0.3:
+  version "4.0.3"
+  resolved "https://registry.npmmirror.com/postcss-env-function/download/postcss-env-function-4.0.3.tgz#cd56e3898d87b69c35d9b44b1df050a59757b803"
+  integrity sha512-RQ0CwXX161FLuC525Lx7VqsHXSPQvgErgOMcbfuAKPq1hgHDPJLemowVaPuWF4E3IO8rgUbStaRLGTM5VlN/vw==
+  dependencies:
+    postcss-value-parser "^4.2.0"
+
+postcss-focus-visible@^6.0.2:
+  version "6.0.2"
+  resolved "https://registry.npmmirror.com/postcss-focus-visible/download/postcss-focus-visible-6.0.2.tgz#b5034899d098c26c68e6f901e2674c88ee1aaede"
+  integrity sha512-KYztrdQRRr+pPJQRAyr9HAEr8I8TUfpSyqOo8qddrjtMLap7Ud1FAF8szi4ZWrhMmch3EwL4RQMqsneOByWZIA==
+  dependencies:
+    postcss-selector-parser "^6.0.7"
+
+postcss-focus-within@^5.0.2:
+  version "5.0.2"
+  resolved "https://registry.npmmirror.com/postcss-focus-within/download/postcss-focus-within-5.0.2.tgz#ba9229b68c03ad65aa4ead81ca29717b5b4dbf62"
+  integrity sha512-0zm8gM/fpFZtWM8drbj5M6HKVztHgLqtHygCMB494SOkudtnePpq5nv0ie2Jx/BrD+A5nhj0uK3tuMnEpjKonA==
+  dependencies:
+    postcss-selector-parser "^6.0.7"
+
+postcss-font-variant@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.npm.taobao.org/postcss-font-variant/download/postcss-font-variant-5.0.0.tgz#efd59b4b7ea8bb06127f2d031bfbb7f24d32fa66"
+  integrity sha1-79WbS36ouwYSfy0DG/u38k0y+mY=
+
+postcss-gap-properties@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.npmmirror.com/postcss-gap-properties/download/postcss-gap-properties-3.0.1.tgz#c663a2f116d980d8901f33c583e7205109acc87f"
+  integrity sha512-t7ztwUmG17KQRTHDWeekeSQ41ZsjYK+OJagee3E3hFS46n9RD5QcT/NRxwbc2DWjVSL5GQf46al3wEiH6FRSKg==
+
 postcss-html@^0.36.0:
   version "0.36.0"
   resolved "https://registry.npmmirror.com/postcss-html/download/postcss-html-0.36.0.tgz#b40913f94eaacc2453fd30a1327ad6ee1f88b204"
@@ -5463,12 +5579,31 @@ postcss-html@^0.36.0:
   dependencies:
     htmlparser2 "^3.10.0"
 
+postcss-image-set-function@^4.0.3:
+  version "4.0.3"
+  resolved "https://registry.npmmirror.com/postcss-image-set-function/download/postcss-image-set-function-4.0.3.tgz#1be9324adf679226980c554542ea3fe5d056856f"
+  integrity sha512-+EZRaCg/MzsKW2ggTy26mG/uoHnEAjCcGICCkUYgg2PPguZaRjSBKY4KHiWcdH6ydsR7enlnO3i7bQ+Fpbx7vQ==
+  dependencies:
+    postcss-value-parser "^4.2.0"
+
+postcss-initial@^4.0.1:
+  version "4.0.1"
+  resolved "https://registry.npm.taobao.org/postcss-initial/download/postcss-initial-4.0.1.tgz#529f735f72c5724a0fb30527df6fb7ac54d7de42"
+  integrity sha1-Up9zX3LFckoPswUn32+3rFTX3kI=
+
 postcss-jsx@^0.36.0:
   version "0.36.4"
   resolved "https://registry.nlark.com/postcss-jsx/download/postcss-jsx-0.36.4.tgz#37a68f300a39e5748d547f19a747b3257240bd50"
   integrity sha1-N6aPMAo55XSNVH8Zp0ezJXJAvVA=
   dependencies:
     "@babel/core" ">=7.2.2"
+
+postcss-lab-function@^4.0.2:
+  version "4.0.2"
+  resolved "https://registry.npmmirror.com/postcss-lab-function/download/postcss-lab-function-4.0.2.tgz#6b91acb5f44e3ddc283c2c593b8858e5c261bda4"
+  integrity sha512-IkX1S1CROQF9uCu5F4/Ib5SRFDJXlJg3ig9x4OJkKIF16y0o7WRKfFje2ym+yThfwYjozwHZgf37Xwbnscpipg==
+  dependencies:
+    postcss-value-parser "^4.2.0"
 
 postcss-less@^3.1.0:
   version "3.1.4"
@@ -5486,6 +5621,11 @@ postcss-loader@^6.2.1:
     klona "^2.0.5"
     semver "^7.3.5"
 
+postcss-logical@^5.0.1:
+  version "5.0.1"
+  resolved "https://registry.npmmirror.com/postcss-logical/download/postcss-logical-5.0.1.tgz#48dcdfca520d00ac5a450289d37d5db8f532de70"
+  integrity sha512-cKekWCoZrxdQktbj8PyCOqQWxsYAPyHjoeBPedkQzfWuEqRm0KVFRHypsHAiH2dDVUae52yx8PBtWS+V3BqT5w==
+
 postcss-markdown@^0.36.0:
   version "0.36.0"
   resolved "https://registry.npmmirror.com/postcss-markdown/download/postcss-markdown-0.36.0.tgz#7f22849ae0e3db18820b7b0d5e7833f13a447560"
@@ -5493,6 +5633,11 @@ postcss-markdown@^0.36.0:
   dependencies:
     remark "^10.0.1"
     unist-util-find-all-after "^1.0.2"
+
+postcss-media-minmax@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.nlark.com/postcss-media-minmax/download/postcss-media-minmax-5.0.0.tgz#7140bddec173e2d6d657edbd8554a55794e2a5b5"
+  integrity sha1-cUC93sFz4tbWV+29hVSlV5TipbU=
 
 postcss-media-query-parser@^0.2.3:
   version "0.2.3"
@@ -5579,6 +5724,13 @@ postcss-modules-values@^4.0.0:
   dependencies:
     icss-utils "^5.0.0"
 
+postcss-nesting@^10.0.3:
+  version "10.0.3"
+  resolved "https://registry.npmmirror.com/postcss-nesting/download/postcss-nesting-10.0.3.tgz#f19288ad07ef5ee47eb86991580b5d7b16a7f5ca"
+  integrity sha512-Dshtj57d5ytK1AeVNpQHp8gINgdjsRJaRjH1QmJHGcfOQIP4TNtlrrrh5o3i3bBTwge2+nh1D9xbI2wrckz5Xw==
+  dependencies:
+    postcss-selector-parser "^6.0.7"
+
 postcss-normalize-charset@^5.0.1:
   version "5.0.1"
   resolved "https://registry.nlark.com/postcss-normalize-charset/download/postcss-normalize-charset-5.0.1.tgz?cache=0&sync_timestamp=1621449558308&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fpostcss-normalize-charset%2Fdownload%2Fpostcss-normalize-charset-5.0.1.tgz#121559d1bebc55ac8d24af37f67bd4da9efd91d0"
@@ -5653,6 +5805,69 @@ postcss-ordered-values@^5.0.2:
     cssnano-utils "^2.0.1"
     postcss-value-parser "^4.1.0"
 
+postcss-overflow-shorthand@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.npmmirror.com/postcss-overflow-shorthand/download/postcss-overflow-shorthand-3.0.1.tgz#d0d0a9e2bbf3428a31e0a9d81e4a0dc1164ce356"
+  integrity sha512-/ajDNoTF+LiuhIZjenjb/ndBoKP/WYy/dTT8BCCtLU1wrezkax+lXw5r3c5qR4cadNNMbksAnhWJXNjd9xNTHA==
+
+postcss-page-break@^3.0.4:
+  version "3.0.4"
+  resolved "https://registry.nlark.com/postcss-page-break/download/postcss-page-break-3.0.4.tgz#7fbf741c233621622b68d435babfb70dd8c1ee5f"
+  integrity sha1-f790HCM2IWIraNQ1ur+3DdjB7l8=
+
+postcss-place@^7.0.2:
+  version "7.0.2"
+  resolved "https://registry.npmmirror.com/postcss-place/download/postcss-place-7.0.2.tgz#f54e971a348e8fa76d65d94420a83302fc9416e1"
+  integrity sha512-XsZCU8X8M9dHKGlxdycihxPajSkRd4u+cIUJz/FgC61Mr/swStI3xAvsYai9Fh22kU+VVAn7ihoZk8h9pQhDfA==
+  dependencies:
+    postcss-value-parser "^4.2.0"
+
+postcss-preset-env@^7.0.2:
+  version "7.0.2"
+  resolved "https://registry.npmmirror.com/postcss-preset-env/download/postcss-preset-env-7.0.2.tgz#f143d4aa2eb0f13a50f20bbcff8b3bb3413e7bc6"
+  integrity sha512-xgmkS+H2xhjPQWewnH4ViKBCHIZ15FfpldGZuBFaBIi/iipxHTLnBHKtkCp1L531SdNEPwo9md2psjOU1G77lw==
+  dependencies:
+    autoprefixer "^10.4.0"
+    browserslist "^4.19.1"
+    caniuse-lite "^1.0.30001287"
+    css-blank-pseudo "^3.0.0"
+    css-has-pseudo "^3.0.0"
+    css-prefers-color-scheme "^6.0.0"
+    cssdb "^5.0.0"
+    postcss-attribute-case-insensitive "^5.0.0"
+    postcss-color-functional-notation "^4.1.0"
+    postcss-color-hex-alpha "^8.0.1"
+    postcss-color-rebeccapurple "^7.0.1"
+    postcss-custom-media "^8.0.0"
+    postcss-custom-properties "^12.0.1"
+    postcss-custom-selectors "^6.0.0"
+    postcss-dir-pseudo-class "^6.0.1"
+    postcss-double-position-gradients "^3.0.3"
+    postcss-env-function "^4.0.3"
+    postcss-focus-visible "^6.0.2"
+    postcss-focus-within "^5.0.2"
+    postcss-font-variant "^5.0.0"
+    postcss-gap-properties "^3.0.1"
+    postcss-image-set-function "^4.0.3"
+    postcss-initial "^4.0.1"
+    postcss-lab-function "^4.0.2"
+    postcss-logical "^5.0.1"
+    postcss-media-minmax "^5.0.0"
+    postcss-nesting "^10.0.3"
+    postcss-overflow-shorthand "^3.0.1"
+    postcss-page-break "^3.0.4"
+    postcss-place "^7.0.2"
+    postcss-pseudo-class-any-link "^7.0.1"
+    postcss-replace-overflow-wrap "^4.0.0"
+    postcss-selector-not "^5.0.0"
+
+postcss-pseudo-class-any-link@^7.0.1:
+  version "7.0.1"
+  resolved "https://registry.npmmirror.com/postcss-pseudo-class-any-link/download/postcss-pseudo-class-any-link-7.0.1.tgz#9b7b3572b78b0d6e2016bcc8762b254e341ebdde"
+  integrity sha512-Zt+VMw9qX7Um/cYOaywOQvXipDw/U3U83L6MFHocbjVIhLd+x5G4SSDmKm8sW2/HlaTno2Cazub8USrDvJ4DLA==
+  dependencies:
+    postcss-selector-parser "^6.0.7"
+
 postcss-reduce-initial@^5.0.2:
   version "5.0.2"
   resolved "https://registry.npmmirror.com/postcss-reduce-initial/download/postcss-reduce-initial-5.0.2.tgz#fa424ce8aa88a89bc0b6d0f94871b24abe94c048"
@@ -5668,6 +5883,11 @@ postcss-reduce-transforms@^5.0.1:
   dependencies:
     cssnano-utils "^2.0.1"
     postcss-value-parser "^4.1.0"
+
+postcss-replace-overflow-wrap@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.nlark.com/postcss-replace-overflow-wrap/download/postcss-replace-overflow-wrap-4.0.0.tgz#d2df6bed10b477bf9c52fab28c568b4b29ca4319"
+  integrity sha1-0t9r7RC0d7+cUvqyjFaLSynKQxk=
 
 postcss-reporter@^6.0.0:
   version "6.0.1"
@@ -5711,6 +5931,13 @@ postcss-scss@^2.0.0:
   dependencies:
     postcss "^7.0.6"
 
+postcss-selector-not@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.nlark.com/postcss-selector-not/download/postcss-selector-not-5.0.0.tgz#ac5fc506f7565dd872f82f5314c0f81a05630dc7"
+  integrity sha1-rF/FBvdWXdhy+C9TFMD4GgVjDcc=
+  dependencies:
+    balanced-match "^1.0.0"
+
 postcss-selector-parser@^3.1.0:
   version "3.1.2"
   resolved "https://registry.npmmirror.com/postcss-selector-parser/download/postcss-selector-parser-3.1.2.tgz#b310f5c4c0fdaf76f94902bbaa30db6aa84f5270"
@@ -5720,7 +5947,7 @@ postcss-selector-parser@^3.1.0:
     indexes-of "^1.0.1"
     uniq "^1.0.1"
 
-postcss-selector-parser@^6.0.2, postcss-selector-parser@^6.0.4, postcss-selector-parser@^6.0.5, postcss-selector-parser@^6.0.6:
+postcss-selector-parser@^6.0.2, postcss-selector-parser@^6.0.4, postcss-selector-parser@^6.0.5, postcss-selector-parser@^6.0.6, postcss-selector-parser@^6.0.7:
   version "6.0.7"
   resolved "https://registry.npmmirror.com/postcss-selector-parser/download/postcss-selector-parser-6.0.7.tgz#48404830a635113a71fd79397de8209ed05a66fc"
   integrity sha512-U+b/Deoi4I/UmE6KOVPpnhS7I7AYdKbhGcat+qTQ27gycvaACvNEw11ba6RrkwVmDVRW7sigWgLj4/KbbJjeDA==
