@@ -2,17 +2,19 @@ const path = require('path')
 const WebpackBar = require('webpackbar')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const { isDev } = require('./constant')
 
 const resolvePath = (relativePath) => path.resolve(__dirname, relativePath) // 根据相对路径获取绝对路径
 
 const getCssLoaders = () => [
-  MiniCssExtractPlugin.loader,
+  isDev ? 'style-loader' : MiniCssExtractPlugin.loader,
   {
     loader: 'css-loader',
     options: {
       modules: {
-        localIdentName: '[name]--[hash:base64:5]',
+        localIdentName: '[name]--[hash:base64:5]', // 开启esmodule
       },
+      sourceMap: isDev, // 映射css错误
     },
   },
 ]

@@ -8,7 +8,7 @@ module.exports = merge(baseConfig, {
     path: resolvePath('../dist'),
     filename: '[name].bundle.js',
   },
-  devtool: 'eval-source-map',
+  devtool: 'cheap-module-source-map',
   devServer: {
     host: SERVER_HOST,
     port: SERVER_PORT,
