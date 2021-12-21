@@ -22,6 +22,12 @@ const getCssLoaders = () => [
 
 const baseConfig = {
   entry: resolvePath('../src/index'),
+  cache: {
+    type: 'filesystem',
+    buildDependencies: {
+      config: [__filename],
+    },
+  },
   resolve: {
     alias: {
       src: resolvePath('../src'),
