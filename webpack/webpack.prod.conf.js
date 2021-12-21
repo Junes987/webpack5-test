@@ -11,5 +11,9 @@ module.exports = merge(baseConfig, {
     path: resolvePath('../dist'),
     filename: '[name].[contenthash:8].bundle.js',
   },
-  plugins: [new CleanWebpackPlugin(), new CssMinimizerWebpackPlugin()],
+  plugins: [new CleanWebpackPlugin()],
+  optimization: {
+    minimize: true,
+    minimizer: [new CssMinimizerWebpackPlugin()],
+  },
 })
