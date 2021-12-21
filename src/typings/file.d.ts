@@ -1,16 +1,16 @@
 // src/typings/file.d.ts
-declare module "*.css" {
-  const style: any;
+declare module '*.css' {
+  const style: any
   export default style
 }
 
-declare module "*.scss" {
-  const style: any;
+declare module '*.scss' {
+  const style: any
   export default style
 }
 
-declare module "*.less" {
-  const style: any;
+declare module '*.less' {
+  const style: any
   export default style
 }
 
@@ -43,4 +43,3 @@ declare module '*.png' {
   const path: string
   export default path
 }
-
