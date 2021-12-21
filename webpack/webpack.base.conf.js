@@ -60,7 +60,10 @@ const baseConfig = {
     ],
   },
   plugins: [
-    new WebpackBar(),
+    new WebpackBar({
+      name: isDev ? '正在启动' : '正在打包',
+      color: '#fa8c16',
+    }),
     new HtmlWebpackPlugin({
       title: 'react app',
       template: resolvePath('../public/index.html'),
