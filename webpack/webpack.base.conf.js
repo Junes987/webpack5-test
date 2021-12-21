@@ -2,6 +2,7 @@ const path = require('path')
 const WebpackBar = require('webpackbar')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin')
 const { isDev } = require('./constant')
 
 const resolvePath = (relativePath) => path.resolve(__dirname, relativePath) // 根据相对路径获取绝对路径
@@ -72,6 +73,11 @@ const baseConfig = {
     new MiniCssExtractPlugin({
       filename: 'css/[name].[contenthash:8].css',
       chunkFilename: 'css/[name].[contenthash:8].chunk.css',
+    }),
+    new ForkTsCheckerWebpackPlugin({
+      typescript: {
+        configFile: resolvePath('../tsconfig.json'),
+      },
     }),
   ],
 }
