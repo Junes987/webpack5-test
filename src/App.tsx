@@ -7,7 +7,7 @@ const App = () => {
   return (
     <div className={styles.container}>
       <Suspense fallback={<div>Loading...</div>}>
-        <div>App</div>
+        <div>App1</div>
         <Page1 />
       </Suspense>
     </div>

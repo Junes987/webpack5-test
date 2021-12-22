@@ -23,7 +23,7 @@ module.exports = merge(baseConfig, {
     minimize: true,
     minimizer: [new CssMinimizerWebpackPlugin()],
     splitChunks: {
-      chunks: 'initial',
+      chunks: 'async',
       name(module, chunks, cacheGroupKey) {
         const moduleFileName = module
           .identifier()
@@ -39,7 +39,7 @@ module.exports = merge(baseConfig, {
       maxInitialRequests: 30,
       enforceSizeThreshold: 50000,
       cacheGroups: {
-        defaultVendors: {
+        vendors: {
           test: /[\\/]node_modules[\\/]/,
           priority: -10,
           reuseExistingChunk: true,
